@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="icon"  type="image/png" href="favicon.png"/>
+<title>boot compass</title>
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg1 {
+  background-image: url('index_bg_1.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.bgimg2 {
+  background-image: url('index_bg_2.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.bgimg3 {
+  background-image: url('index_bg_3.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.bgimg4 {
+  background-image: url('index_bg_4.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.bgimg5{
+  background-image: url('index_bg_5.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  font-size: 12px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.text {
+  color: #347378;
+  background-color: rgba(254,204,71, 0.8);
+}
+
+a { color: #4c6964; }
+</style>
+<body>
+<div id = "bcwindow" class="bgimg">
+  <div class="topleft">
+    <p><img src="logo.png"></p>
+  </div>
+  <div class="middle">
+    <h1><p id="text1">coming soon...</p></h1>
+    <p id="text2">&nbsp;For details, contact <b>&lt;boot compass/&gt;</b> at <a href="mailto:bootcompass@gmail.com">bootcompass@gmail.com</a>&nbsp;</p>
+  </div>
+  <div class="bottomleft">
+  <p id="credits"></p>
+  </div>
+</div>
+<script>
+	var rNumber = Math.floor(Math.random() * 5) + 1;
+	console.log(rNumber);
+	switch (rNumber) {
+	  case 1:
+		document.getElementById("bcwindow").classList.add('bgimg1');
+		document.getElementById("credits").innerHTML = "Photo by Kaitlyn Baker on Unsplash";
+		document.getElementById("text1").classList.add('text');
+		document.getElementById("text2").classList.add('text');
+		break;
+	  case 2:
+		document.getElementById("bcwindow").classList.add('bgimg2');
+		document.getElementById("credits").innerHTML =  "Photo by Nubelson Fernandes on Unsplash";
+		document.getElementById("text1").classList.add('text');
+		document.getElementById("text2").classList.add('text');
+		break;
+	  case 3:
+		document.getElementById("bcwindow").classList.add('bgimg3');
+		document.getElementById("credits").innerHTML = "Photo by Zan on Unsplash";
+		document.getElementById("text1").classList.add('text');
+		document.getElementById("text2").classList.add('text');
+		break;
+	case 4:
+		document.getElementById("bcwindow").classList.add('bgimg4');
+		document.getElementById("credits").innerHTML = "Photo by John Schnobrich on Unsplash";
+		document.getElementById("text1").classList.add('text');
+		document.getElementById("text2").classList.add('text');
+		break;
+	case 5:
+		document.getElementById("bcwindow").classList.add('bgimg5');
+		document.getElementById("credits").innerHTML = "Photo by Markus Spiske on Unsplash";
+		document.getElementById("text1").classList.add('text');
+		document.getElementById("text2").classList.add('text');
+		break;
+	}
+</script>
+</body>
+</html>
